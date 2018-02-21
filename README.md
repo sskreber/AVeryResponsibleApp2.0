@@ -7,7 +7,7 @@ Fixed some issues with the second activity (SoberActivity).
 
 TODO (1): so far could not manage to pass original alcohol and water score to second activity and from there back to the main one if user gets sent back there (they get reset instead).
 
-TODO (2): SoberActivity's background drawable looks strange on the screen when changed upon user failing the quiz. Both on portrait and landscape. Should rescale/recut portrait version, and create a separate landscape to be able to use a differently cut, landscape-friendly version of the same picture.
+TODO (2): SoberActivity's background drawable looks strange on the screen when changed upon user failing the quiz. Both on portrait and landscape. Should rescale/recut portrait version, and create a separate landscape layout to be able to use a differently cut, landscape-friendly version of the same picture.
 
 # AVeryResponsibleApp2.0 (Udacity Google Developer Challenge Scholarship 2017, Project 2)
 Layout changes for readability, and added one more activity (soberness quiz). TODO: added activity's java needs some fixing.
