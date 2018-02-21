@@ -1,5 +1,10 @@
 # AVeryResponsibleApp3.0 (Android Basics Nanodegree by Google at Udacity, Feb. 2018, Project 2)
-Fixed some issues with the second activity (SoberActivity). Adde content to SoberActivity (e.g. background drawable changes is soberness score proves low at the end of the quiz, and goHomeMessage is displayed); saves views, eventScore and background on rotation; sends user back (intent) to original score counter (MainActivity) if soberness score proves high enough at the end of the soberness quiz. Scaled images to various sizes using Android DRawable Importer (installed plugin). 
+Fixed some issues with the second activity (SoberActivity). 
+- Added content to SoberActivity (e.g. background drawable changes is soberness score proves low at the end of the quiz, and goHomeMessage is displayed); 
+- Saves views, eventScore and background on rotation; 
+- Sends user back (intent) to original score counter (MainActivity) if soberness score proves high enough at the end of the soberness quiz. 
+- Scaled images to various sizes using Android DRawable Importer (installed plugin). 
+
 TODO (1): so far could not manage to pass original alcohol and water score to second activity and from there back to the main one if user gets sent back there (they get reset instead).
 TODO (2): SoberActivity's background drawable looks strange on the screen when changed upon user failing the quiz. Both on portrait and landscape. Should rescale/recut portrait version, and create a separate landscape to be able to use a differently cut, landscape-friendly version of the same picture.
 
