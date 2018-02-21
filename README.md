@@ -1,3 +1,5 @@
+# AVeryResponsibleApp3.0 (Udacity Google Developer Challenge Scholarship 2017, Project 2)
+
 # AVeryResponsibleApp2.0 (Udacity Google Developer Challenge Scholarship 2017, Project 2)
 Layout changes for readability, and added one more activity (soberness quiz). TODO: added activity's java needs some fixing.
 
