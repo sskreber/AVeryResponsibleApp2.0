@@ -13,4 +13,66 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="CounterNumber" parent="AppTheme.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/paddingOrMar_M</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/textSize_XL</item>
+    </style>
+
+    <style name="UpperButton" parent="AppTheme.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/paddingOrMar_S</item>
+        <item name="android:layout_marginLeft">@dimen/paddingOrMar_XL</item>
+        <item name="android:layout_marginRight">@dimen/paddingOrMar_XL</item>
+        <item name="android:textSize">@dimen/textSize_M</item>
+    </style>
+
+    <style name="UpperButtonLand" parent="UpperButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize_S</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="WaterAlcCaptions" parent="AppTheme.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:paddingLeft">@dimen/paddingOrMar_M</item>
+        <item name="android:paddingRight">@dimen/paddingOrMar_M</item>
+        <item name="android:paddingTop">@dimen/paddingOrMar_L</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/textSize_L</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="WaterAlcLowCaptions" parent="AppTheme.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:paddingLeft">@dimen/paddingOrMar_M</item>
+        <item name="android:paddingRight">@dimen/paddingOrMar_M</item>
+        <item name="android:paddingBottom">@dimen/paddingOrMar_M</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/textSize_L</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="UndoButton" parent="AppTheme.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginBottom">@dimen/paddingOrMar_L</item>
+        <item name="android:layout_marginLeft">@dimen/paddingOrMar_XL</item>
+        <item name="android:layout_marginRight">@dimen/paddingOrMar_XL</item>
+        <item name="android:src">@drawable/undo_s</item>
+    </style>
+
 </resources>

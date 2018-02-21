@@ -1,15 +1,38 @@
 <resources>
     <string name="app_name">Score Keeper</string>
     <string name="action_settings">Settings</string>
-    <string name="alcohol">Alcohol lvl</string>
-    <string name="soft_drinks">Water units</string>
-    <string name="unlocked">unlocked</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="soft_drinks">Water</string>
+    <string name="input">input</string>
     <string name="needed">needed</string>
-    <string name="strong">Strong (1 dl)</string>
-    <string name="weak">Weak (1 dl)</string>
-    <string name="water">Water (1 dl)</string>
-    <string name="soft_drink">Soft drink (1 dl)</string>
+    <string name="strong">Strong (cl)</string>
+    <string name="weak">Weak (dl)</string>
+    <string name="water">Water (dl)</string>
+    <string name="soft_drink">Soda (dl)</string>
     <string name="reset">reset</string>
     <string name="alcohol_a_number">0</string>
     <string name="soft_drinks_a_number">0</string>
+    <string name="equals">=</string>
+    <string name="question"></string>
+    <string name="startQuiz">Start quiz</string>
+    <string name="submitAnswer">Submit answer</string>
+
+    <string name="operation1">1+8=</string>
+    <string name="operation2">16+22=</string>
+    <string name="operation3">17+19=</string>
+    <string name="operation4">101&#8211;44=</string>
+    <string name="operation5">215&#8211;14+1=</string>
+
+    <string name="op1correct">9</string>
+    <string name="op2correct">38</string>
+    <string name="op3correct">36</string>
+    <string name="op4correct">57</string>
+    <string name="op5correct">202</string>
+
+    <string name="toastCorrect">Uh-oh. Wrong!</string>
+    <string name="toastWrong">Yup! You\'re correct!</string>
+    <string name="toastDrunk">Go home friend, you\'re drunk!</string>
+    <string name="toastSober">Well, you\'ve drunk a lot but you can still count!</string>
+    <string name="GoHomeMessage">Go home and sleep : )</string>
+    <string name="empty"></string>
 </resources>

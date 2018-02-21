@@ -1,5 +1,7 @@
 package com.example.android.counter2;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
@@ -95,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
     // Increases the score for alcohol consumed by 1 point.
 
     public void addOneForAlcohol(View v) {
-        scoreAlcohol = scoreAlcohol + 1;
-        scoreSoftDrink = scoreSoftDrink + 1;
+        scoreAlcohol++;
+        scoreSoftDrink++;
         displayForAlcohol(scoreAlcohol);
         displayForSoftDrink(scoreSoftDrink);
         if (scoreAlcohol == 1) {
@@ -160,8 +162,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void subtractOneForAlcohol(View v) {
         if (scoreAlcohol > 0) {
-            scoreAlcohol = scoreAlcohol - 1;
-            scoreSoftDrink = scoreSoftDrink - 1;
+            scoreAlcohol--;
+            scoreSoftDrink = scoreSoftDrink--;
         } else {
             scoreAlcohol = 0;
         }
@@ -188,12 +190,15 @@ public class MainActivity extends AppCompatActivity {
     public void displayForAlcohol(int alcScore) {
         TextView scoreView = (TextView) findViewById(R.id.alcohol_score);
         scoreView.setText(String.valueOf(alcScore));
+        if (scoreAlcohol > 12) {
+            startSoberQuiz(scoreAlcohol);
+        }
     }
 
     // Increases the score for needed soft drink consumption by 1 point.
 
     public void addOneForSoftDrink(View v) {
-        scoreSoftDrink = scoreSoftDrink + 1;
+        scoreSoftDrink++;
         displayForSoftDrink(scoreSoftDrink);
     }
 
@@ -207,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
     // Decreases the score for needed soft drink consumption by 1 point.
 
     public void subtractOneForSoftDrink(View v) {
-        scoreSoftDrink = scoreSoftDrink - 1;
+        scoreSoftDrink--;
         displayForSoftDrink(scoreSoftDrink);
         if (scoreSoftDrink > 11) {
             Toast.makeText(getApplicationContext(), "Phew! Finally!", Toast.LENGTH_SHORT).show();
@@ -265,6 +270,9 @@ public class MainActivity extends AppCompatActivity {
     public void displayForSoftDrink(int waterScore) {
         TextView scoreView = (TextView) findViewById(R.id.soft_drink_score);
         scoreView.setText(String.valueOf(waterScore));
+        if (scoreAlcohol > 12) {
+            startSoberQuiz(scoreAlcohol);
+        }
     }
 
     // Resets the score for both the alcohol and soft drink score to 0.
@@ -274,5 +282,13 @@ public class MainActivity extends AppCompatActivity {
         scoreSoftDrink = 0;
         displayForAlcohol(scoreAlcohol);
         displayForSoftDrink(scoreSoftDrink);
+    }
+
+    public void startSoberQuiz(int scoreAlcohol) {
+        Intent soberQuizIntent = new Intent(MainActivity.this, SoberQuizActivity.class);
+        // Start the new activity
+        soberQuizIntent.putExtra("scoreAlcohol", scoreAlcohol);
+        soberQuizIntent.putExtra("scoreSoftDrink", scoreSoftDrink);
+        startActivity(soberQuizIntent);
     }
 }

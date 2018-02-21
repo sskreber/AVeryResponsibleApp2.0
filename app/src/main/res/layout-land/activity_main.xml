@@ -16,7 +16,8 @@
         android:background="@drawable/mybutton3"
         android:onClick="resetScore"
         android:text="@string/reset"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:textSize="@dimen/textSize_M" />
 
     <LinearLayout
         android:id="@+id/horizontal_LinLayout"
@@ -25,108 +26,65 @@
         android:background="@color/colorGrey"
         android:orientation="horizontal">
 
+        <!-- The "Water droplets on glass" background image was created by
+        George Becket at www.pexels.com, and modified with coloured tints
+        using www141.lunapic.com-->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:background="@drawable/beer"
+            android:background="@drawable/alc_blurred_y"
             android:orientation="vertical"
             tools:context=".MainActivity">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:paddingLeft="@dimen/paddingOrMar_M"
-                android:paddingRight="@dimen/paddingOrMar_M"
-                android:paddingTop="@dimen/paddingOrMar_L"
-                android:text="@string/alcohol"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textSize_M"
-                android:textStyle="bold" />
+                style="@style/WaterAlcCaptions"
+                android:text="@string/alcohol" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:paddingBottom="@dimen/paddingOrMar_M"
-                android:paddingLeft="@dimen/paddingOrMar_M"
-                android:paddingRight="@dimen/paddingOrMar_M"
-                android:text="@string/unlocked"
-                android:textColor="@color/colorGreen"
-                android:textSize="@dimen/textSize_M"
-                android:textStyle="bold" />
+                style="@style/WaterAlcLowCaptions"
+                android:text="@string/input" />
 
             <TextView
                 android:id="@+id/alcohol_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="@dimen/paddingOrMar_M"
-                android:text="@string/alcohol_a_number"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textSize_L" />
+                style="@style/CounterNumber"
+                android:text="@string/alcohol_a_number" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/UpperButtonLand"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginBottom="@dimen/paddingOrMar_S"
-                    android:layout_marginLeft="@dimen/paddingOrMar_XL"
-                    android:layout_marginRight="@dimen/paddingOrMar_XL"
                     android:background="@drawable/mybutton2"
-                    android:ems="10"
                     android:onClick="addThreeForAlcohol"
                     android:text="@string/strong" />
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/UndoButton"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginBottom="@dimen/paddingOrMar_L"
-                    android:layout_marginLeft="@dimen/paddingOrMar_XL"
-                    android:layout_marginRight="@dimen/paddingOrMar_XL"
-                    android:onClick="subtractThreeForAlcohol"
-                    android:src="@drawable/undo_s" />
+                    android:onClick="subtractThreeForAlcohol" />
             </RelativeLayout>
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginBottom="@dimen/paddingOrMar_S"
-                    android:layout_marginLeft="@dimen/paddingOrMar_XL"
-                    android:layout_marginRight="@dimen/paddingOrMar_XL"
+                    style="@style/UpperButtonLand"
                     android:background="@drawable/mybutton2"
-                    android:ems="10"
                     android:onClick="addOneForAlcohol"
                     android:text="@string/weak" />
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/UndoButton"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginBottom="@dimen/paddingOrMar_L"
-                    android:layout_marginLeft="@dimen/paddingOrMar_XL"
-                    android:layout_marginRight="@dimen/paddingOrMar_XL"
-                    android:onClick="subtractOneForAlcohol"
-                    android:src="@drawable/undo_s" />
+                    android:onClick="subtractOneForAlcohol" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -142,74 +100,40 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:background="@drawable/water"
+            android:background="@drawable/bubbles_blurred_y_r_white"
             android:orientation="vertical"
             tools:context=".MainActivity">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:paddingLeft="@dimen/paddingOrMar_M"
-                android:paddingRight="@dimen/paddingOrMar_M"
-                android:paddingTop="@dimen/paddingOrMar_L"
-                android:text="@string/soft_drinks"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textSize_M"
-                android:textStyle="bold" />
+                style="@style/WaterAlcCaptions"
+                android:text="@string/soft_drinks" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:paddingBottom="@dimen/paddingOrMar_M"
-                android:paddingLeft="@dimen/paddingOrMar_M"
-                android:paddingRight="@dimen/paddingOrMar_M"
-                android:text="@string/needed"
-                android:textColor="@color/colorRed"
-                android:textSize="@dimen/textSize_M"
-                android:textStyle="bold" />
+                style="@style/WaterAlcLowCaptions"
+                android:text="@string/needed" />
 
             <TextView
                 android:id="@+id/soft_drink_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="@dimen/paddingOrMar_M"
-                android:text="@string/soft_drinks_a_number"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/textSize_L" />
+                style="@style/CounterNumber"
+                android:text="@string/soft_drinks_a_number" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/UpperButtonLand"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginBottom="@dimen/paddingOrMar_S"
-                    android:layout_marginLeft="@dimen/paddingOrMar_XL"
-                    android:layout_marginRight="@dimen/paddingOrMar_XL"
                     android:background="@drawable/mybutton"
-                    android:ems="10"
                     android:onClick="subtractTwoForSoftDrink"
                     android:text="@string/water" />
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/UndoButton"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginBottom="@dimen/paddingOrMar_L"
-                    android:layout_marginLeft="@dimen/paddingOrMar_XL"
-                    android:layout_marginRight="@dimen/paddingOrMar_XL"
-                    android:onClick="addTwoForSoftDrink"
-                    android:src="@drawable/undo_s" />
+                    android:onClick="addTwoForSoftDrink" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -217,29 +141,18 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/UpperButtonLand"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginBottom="@dimen/paddingOrMar_S"
-                    android:layout_marginLeft="@dimen/paddingOrMar_XL"
-                    android:layout_marginRight="@dimen/paddingOrMar_XL"
                     android:background="@drawable/mybutton"
-                    android:ems="10"
                     android:onClick="subtractOneForSoftDrink"
                     android:text="@string/soft_drink" />
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/UndoButton"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_gravity="end"
-                    android:layout_marginBottom="@dimen/paddingOrMar_L"
-                    android:layout_marginLeft="@dimen/paddingOrMar_XL"
-                    android:layout_marginRight="@dimen/paddingOrMar_XL"
-                    android:onClick="addOneForSoftDrink"
-                    android:src="@drawable/undo_s" />
+                    android:onClick="addOneForSoftDrink" />
             </RelativeLayout>
 
         </LinearLayout>
