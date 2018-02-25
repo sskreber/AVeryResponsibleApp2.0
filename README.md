@@ -5,7 +5,7 @@
 - Code comments (in detail) added. 
 - At the end of quiz, not the background of the ScrollView is changed (see previous version) but an ImageView is set to visible from its hitherto gone state.  
 - Managed to accomplish the previous version's TODO2, but not TODO1 and 3. So, background drawable problems are fixed when a picture is displayed at the end of the quiz upon user failing it. 
-- Remaining TODO's for the future:
+- ISSUES/Remaining TODO's for the future:
 
 TODO (1): find a way to pass original alcohol and water score to second activity and from there back to the main one if user gets sent back there (they get reset instead). I can pass it tothe second activity but cannot pass it back to the first one upon user being re-sent there.
 
