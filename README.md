@@ -50,7 +50,7 @@ TODO: the java is not perfect yet.
 - Next: after fixing these, the plan is to send the sober enough user back to mainActivity.java so that they can continue drinking.
 The drunk user might get brought to a new activity displaying a skull or something (I could even do this within the quiz activity by changing what appears on the screen).
 
-# AVeryResponsibleApp1.0 (Udacity Google Developer Challenge Scholarship 2017, Project 2)
+# AVeryResponsibleApp1.0 (Udacity Google Developer Challenge Scholarship 2017, Project 2) - APP DESCRIPTION - GOALS AND CONTEXT
 
  This app has been designed to track the user's alcohol and water/soft drink intake. 
  Water is used to refer to both water and soft drinks here, as the component of water is the vital point here. 
