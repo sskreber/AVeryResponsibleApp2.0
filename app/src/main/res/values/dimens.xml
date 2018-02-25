@@ -6,7 +6,8 @@
     <dimen name="textSize_XL">55sp</dimen>
     <dimen name="paddingOrMar_S">8dp</dimen>
     <dimen name="paddingOrMar_M">12dp</dimen>
-    <dimen name="paddingOrMar_L">18dp</dimen>
+    <dimen name="paddingOrMar_L">17dp</dimen>
+    <dimen name="paddingOrMar_L_Land">18dp</dimen>
     <dimen name="paddingOrMar_XL">24dp</dimen>
     <dimen name="paddingOrMar_XXL">28dp</dimen>
     <dimen name="paddingOrMar_XXXL">35dp</dimen>

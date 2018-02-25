@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Initializes a variable that tracks the total score of alcohol already consumed by user.
-     * This variable will later on be programmed not to go below 0.
+     * This variable will later on be set not to go below 0.
      */
 
     int scoreAlcohol;
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "That's the spirit! Literally...", Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol == 6) {
             Toast.makeText(getApplicationContext(), "You're still okay... kinda.", Toast.LENGTH_SHORT).show();
-            // keep varying messages here based on water intake as alcohol level increases.
+            // keeps displaying various messages based on water intake as alcohol level increases.
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink <= 4 && scoreAlcohol % 2 == 1) {
             Toast.makeText(getApplicationContext(), "Drown your sorrow in juice instead!", Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink <= 4 && scoreAlcohol % 2 == 0) {
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Decreases the score for alcohol consumed by 1 point, and displays toast messages accordingly.
+    // Method that decreases the score for alcohol consumed by 1 point, and displays toast messages accordingly.
 
     public void subtractOneForAlcohol(View v) {
         if (scoreAlcohol > 0) {
@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         displayForSoftDrink(scoreSoftDrink);
     }
 
-    // Decreases the score for alcohol consumed by 3 points, and displays toast messages accordingly.
+    // Method that decreases the score for alcohol consumed by 3 points, and displays toast messages accordingly.
 
     public void subtractThreeForAlcohol(View v) {
         if (scoreAlcohol >= 3) {
@@ -183,9 +183,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the total score for the alcohol consumed (in made-up units).
+     * Method that displays the total score for the alcohol consumed (in made-up units).
      * Signifies the amount of alcohol user already consumed.
      * User should keep it low.
+     * @param alcScore User's current alcohol score (alcohol consumed).
      */
     public void displayForAlcohol(int alcScore) {
         TextView scoreView = findViewById(R.id.alcohol_score);
@@ -195,21 +196,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Increases the score for needed soft drink consumption by 1 point.
+    // Method that increases the score for needed soft drink consumption by 1 point.
 
     public void addOneForSoftDrink(View v) {
         scoreSoftDrink++;
         displayForSoftDrink(scoreSoftDrink);
     }
 
-    // Increases the score for alcohol consumed by 2 points.
+    // Method that increases the score for alcohol consumed by 2 points.
 
     public void addTwoForSoftDrink(View v) {
         scoreSoftDrink = scoreSoftDrink + 2;
         displayForSoftDrink(scoreSoftDrink);
     }
 
-    // Decreases the score for needed soft drink consumption by 1 point, and displays toast messages accordingly.
+    // Method that decreases the score for needed soft drink consumption by 1 point, and displays toast messages accordingly.
 
     public void subtractOneForSoftDrink(View v) {
         scoreSoftDrink--;
@@ -235,7 +236,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Decreases the score for needed soft drink consumption by 2 points, and displays toast messages accordingly.
+    // Method that decreases the score for needed soft drink consumption by 2 points, and displays toast messages accordingly.
 
     public void subtractTwoForSoftDrink(View v) {
         scoreSoftDrink = scoreSoftDrink - 2;
@@ -262,9 +263,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the total score for soft drinks (in made-up units).
+     * Method that displays the total score for soft drinks (in made-up units).
      * Signifies the amount of soft drinks user still needs to drink.
      * User should keep it low.
+     * @param waterScore User's current water/softDrink score (units consumed).
      */
 
     public void displayForSoftDrink(int waterScore) {

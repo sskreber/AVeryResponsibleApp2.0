@@ -36,12 +36,12 @@ public class SoberQuizActivity extends AppCompatActivity {
     String buttonText;
     boolean layoutIsGoHome;
 
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-        /**
-         * Saves user's current soberness score, the values of views which are presently displayed on the screen,
-         * and the event counter (how many questions user has been asked already).
-         */
+    /**
+     * Saves user's current soberness score, the values of views which are presently displayed on the screen,
+     * and the event counter (how many questions user has been asked already).
+     */
 
+    public void onSaveInstanceState(Bundle savedInstanceState) {
         TextView statementTextView = findViewById(R.id.statement);
         statement = statementTextView.getText().toString();
         TextView answerTextView = findViewById(R.id.answer);
@@ -87,7 +87,6 @@ public class SoberQuizActivity extends AppCompatActivity {
      * displays those instead of the default values.
      */
 
-
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -105,7 +104,6 @@ public class SoberQuizActivity extends AppCompatActivity {
             statementTextView.setVisibility(View.GONE);
             answerTextView.setVisibility(View.GONE);
         }
-
         displayAnswer(answer);
         displayStatement(statement);
         displayButtonWording(buttonText);
@@ -120,12 +118,10 @@ public class SoberQuizActivity extends AppCompatActivity {
      */
 
     public void startQuiz(View v) {
-
         TextView startQuizTextView = findViewById(R.id.startQuiz);
         startQuizTextView.setText(getString(R.string.submitAnswer));
         String toastDrunk = getString(R.string.toastDrunk);
         String toastSober = getString(R.string.toastSober);
-
         eventCounter++;
 
         if (eventCounter == 1) {
@@ -193,7 +189,6 @@ public class SoberQuizActivity extends AppCompatActivity {
             ImageView GoHomeImage = findViewById(R.id.GoHomeImage);
             GoHomeImage.setVisibility(View.VISIBLE);
             layoutIsGoHome = true;
-
             statement = getString(R.string.empty);
             answer = getString(R.string.empty);
             buttonText = getString(R.string.GoHomeMessage);
@@ -209,7 +204,6 @@ public class SoberQuizActivity extends AppCompatActivity {
             if (view != null) {
                 InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-
             }
         }
         // Drawable background picture after GoHomeMessage was created by "Burst" at https://www.pexels.com //
@@ -256,9 +250,9 @@ public class SoberQuizActivity extends AppCompatActivity {
     /**
      * A method that gets called inside the startQuiz method.
      * It changes the displayed math quiz question upon the user's submission of their answer to the next one.
-     *
      * @param statement The to-be-displayed upcoming math quiz question.
      */
+
     public void displayStatement(String statement) {
         TextView statementTextView = findViewById(R.id.statement);
         statementTextView.setText(statement);
@@ -267,9 +261,9 @@ public class SoberQuizActivity extends AppCompatActivity {
     /**
      * A method that gets called inside the startQuiz method.
      * It changes the displayed math quiz answer (an edit text view) to the user's typed in solution.
-     *
      * @param answer The user's typed in solution.
      */
+
     public void displayAnswer(String answer) {
         TextView answerTextView = findViewById(R.id.answer);
         answerTextView.setText(answer);
@@ -278,9 +272,9 @@ public class SoberQuizActivity extends AppCompatActivity {
     /**
      * A method that gets called inside the startQuiz method.
      * It changes the displayed text on the button (start quiz, submit answer, or go home friend, you're drunk) depending on the context.
-     *
      * @param buttonText The to-be-displayed wording of the button.
      */
+
     public void displayButtonWording(String buttonText) {
         TextView buttonTextView = findViewById(R.id.startQuiz);
         buttonTextView.setText(buttonText);
@@ -288,13 +282,12 @@ public class SoberQuizActivity extends AppCompatActivity {
 
     /**
      * Method that sends user back to Main Activity based if their soberness quiz score was high enough (at least 3 out of 5).
-     *
      * @param soberScore User's score (number of correct answers) on the math quiz (soberness quiz).
-     *                   getIntent and putExtra lines: Getting from and sending back to Main Activity the alcohol score and water score the user arrived with to the soberness quiz.
-     *                   TODO: find a way to make the Main Activity only try to access these scores if a SoberActivity has already been launched and it has sent user back to Main Activity.
-     *                   Now it crashes because Main Activity tries to access these intents even if it is launched for the very first time.
-     *                   So getIntent has been removed from Main Activity for now to prevent this crash.
-     *                   TODO: to learn more about multi screen apps to fix this.
+     * getIntent and putExtra lines: Getting from and sending back to Main Activity the alcohol score and water score the user arrived with to the soberness quiz.
+     * TODO Find a way to make the Main Activity only try to access these scores if a SoberActivity has already been launched and it has sent user back to Main Activity.
+     * Now it crashes because Main Activity tries to access these intents even if it is launched for the very first time.
+     * So getIntent has been removed from Main Activity for now to prevent this crash.
+     * TODO learn more about multi screen apps to fix this.
      */
 
     public void startMainActivity(int soberScore) {
