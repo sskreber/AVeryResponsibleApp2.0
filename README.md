@@ -10,6 +10,7 @@
 TODO (1): find a way to pass original alcohol and water score to second activity and from there back to the main one if user gets sent back there (they get reset instead). I can pass it tothe second activity but cannot pass it back to the first one upon user being re-sent there.
 
 TODO (2): make sure pop-up keyboard stops appearing once user failed the quiz in SoberActivity. `getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);` and
+
 `InputMethodManager im=(InputMethodManager)getActivity().getSystemService(Activity.INPUT_METHOD_SERVICE);`
 `im.hideSoftInputFromWindow(rootView.getWindowToken(),0); `
 do NOT work.
