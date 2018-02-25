@@ -1,3 +1,10 @@
+# AVeryResponsibleApp4.0 (Android Basics Nanodegree by Google at Udacity, Feb. 25. 2018, Project 2)
+
+- New launcher icon, with several scaled versions to fit various device sizes. 
+- When Start Quit button is displayed, no EditText is apparent on the screen anymore, it gets to set visible when the first quiz question appears. 
+- Code comments (in detail) added. 
+- At the end of quiz, not the background of the ScrollView is changed (see previous version) but an ImageView is set to visible from its hitherto gone state.  
+
 # AVeryResponsibleApp3.0 (Android Basics Nanodegree by Google at Udacity, Feb. 2018, Project 2)
 Fixed some issues with the second activity (SoberActivity). 
 - Added content to SoberActivity (e.g. background drawable changes is soberness score proves low at the end of the quiz, and goHomeMessage is displayed); 
