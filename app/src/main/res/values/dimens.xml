@@ -10,5 +10,6 @@
     <dimen name="paddingOrMar_XL">24dp</dimen>
     <dimen name="paddingOrMar_XXL">28dp</dimen>
     <dimen name="paddingOrMar_XXXL">35dp</dimen>
-    <dimen name="paddingOrMarGigantic">200dp</dimen>
+    <dimen name="paddingOrMarSoberButton">320dp</dimen>
+    <dimen name="paddingOrMarSoberButtonLand">300dp</dimen>
 </resources>

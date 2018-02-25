@@ -5,20 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/alc_blurred_y"
-
     tools:context="com.example.android.counter2.SoberQuizActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/GoHomeImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/backgr_drunk_s"
+            android:src="@drawable/backgr_drunk_land"
             android:visibility="gone" />
 
         <LinearLayout
@@ -52,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/paddingOrMar_L"
-            android:layout_marginTop="@dimen/paddingOrMarSoberButton"
+            android:layout_marginTop="@dimen/paddingOrMarSoberButtonLand"
             android:background="@drawable/mybutton3"
             android:onClick="startQuiz"
             android:text="@string/startQuiz"
