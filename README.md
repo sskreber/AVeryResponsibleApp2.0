@@ -1,5 +1,8 @@
 # AVeryResponsibleApp4.0 (Android Basics Nanodegree by Google at Udacity, Feb. 25. 2018, Project 2)
 
+App description: see below, under AVeryResponsibleApp1.0, at "APP DESCRIPTION - GOALS AND CONTEXT".
+Background: the app was created as PROJECT 2 for the Google Developer Challenge Scholarship (phase 1) in Jan, 2018, and carried over as project 2 for the present phase of the scholarship as permitted by Udacity (i.e. First General AMA session: "As long as your work is original work, you may carry over work from the first Phase into this Phase."). Main changes to the phase 1 version(s): see right here below and also under AVeryResponsibleApp3.0.
+
 - New launcher icon, with several scaled versions to fit various device sizes. 
 - When Start Quit button is displayed, no EditText is apparent on the screen anymore, it gets to set visible when the first quiz question appears. 
 - Code comments (in detail) added. 
