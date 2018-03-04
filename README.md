@@ -1,3 +1,13 @@
+# AVeryResponsibleApp5.0 (Android Basics Nanodegree by Google at Udacity, Feb. 25. 2018, Project 2) AFTER REVIEWER FEEDBACK
+
+App description: see below, under AVeryResponsibleApp1.0, at "APP DESCRIPTION - GOALS AND CONTEXT".
+Changes since submitted version (for review):
+(1) Removed hardcoded toasts from Java and referenced it from strings.xml. 
+(2) GameOver toast was useless as specified, as score could not go over 18, SoberQuiz kicks in at13. So got rid of GameOver toast. 
+(3) readme changes (typos). 
+(4) Got rid of unused import statements. (5) Set targetSdkVersion to latest (27).
+
+
 # AVeryResponsibleApp4.0 (Android Basics Nanodegree by Google at Udacity, Feb. 25. 2018, Project 2)
 
 App description: see below, under AVeryResponsibleApp1.0, at "APP DESCRIPTION - GOALS AND CONTEXT".
