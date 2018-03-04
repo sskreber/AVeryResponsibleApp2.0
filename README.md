@@ -23,10 +23,10 @@ do NOT work.
 
 # AVeryResponsibleApp3.0 (Android Basics Nanodegree by Google at Udacity, Feb. 2018, Project 2)
 Fixed some issues with the second activity (SoberActivity). 
-- Added content to SoberActivity (e.g. background drawable changes is soberness score proves low at the end of the quiz, and goHomeMessage is displayed); 
+- Added content to SoberActivity (e.g. background drawable changes if soberness score proves low at the end of the quiz, and goHomeMessage is displayed); 
 - Saves views, eventScore and background on rotation; 
 - Sends user back (intent) to original score counter (MainActivity) if soberness score proves high enough at the end of the soberness quiz. 
-- Scaled images to various sizes using Android DRawable Importer (installed plugin). 
+- Scaled images to various sizes using Android Drawable Importer (installed plugin). 
 
 TODO (1): so far could not manage to pass original alcohol and water score to second activity and from there back to the main one if user gets sent back there (they get reset instead).
 
