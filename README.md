@@ -1,6 +1,7 @@
 # AVeryResponsibleApp5.0 
 
 App description: see below, under AVeryResponsibleApp1.0, at "APP DESCRIPTION - GOALS AND CONTEXT".
+
 Background: submitted for Android Basics Nanodegree by Google at Udacity, Feb. 25. 2018, Project 2) & modified after reviewer feedback.
 Changes since AVeryResponsibleApp4.0:
 
