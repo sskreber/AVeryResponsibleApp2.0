@@ -1,4 +1,4 @@
-# AVeryResponsibleApp5.0 (Android Basics Nanodegree by Google at Udacity, Feb. 25. 2018, Project 2) AFTER REVIEWER FEEDBACK
+# AVeryResponsibleApp5.0 (Android Basics Nanodegree by Google at Udacity, Feb. 25. 2018, Project 2) - AFTER REVIEWER FEEDBACK
 
 App description: see below, under AVeryResponsibleApp1.0, at "APP DESCRIPTION - GOALS AND CONTEXT".
 
