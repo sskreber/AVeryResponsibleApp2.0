@@ -29,10 +29,29 @@
     <string name="op4correct">57</string>
     <string name="op5correct">202</string>
 
-    <string name="toastCorrect">Uh-oh. Wrong!</string>
-    <string name="toastWrong">Yup! You\'re correct!</string>
     <string name="toastDrunk">Go home friend, you\'re drunk!</string>
     <string name="toastSober">Well, you\'ve drunk a lot but you can still count!</string>
     <string name="GoHomeMessage">Go home and sleep : )</string>
     <string name="empty"></string>
+
+    <string name="toastAddForAlcohol_0">Goody, start nice &amp; easy!</string>
+    <string name="toastAddForAlcohol_1">Oho! It must be Friday!</string>
+    <string name="toastAddForAlcohol_2">That\'s the spirit! Literally&#8230;</string>
+    <string name="toastAddForAlcohol_3">You\'re still okay&#8230; kinda.</string>
+    <string name="toastAddForAlcohol_4">Drown your sorrow in juice instead!</string>
+    <string name="toastAddForAlcohol_5">Non-alcoholics were a better idea!</string>
+    <string name="toastAddForAlcohol_6">Turn on the water, please!</string>
+    <string name="toastAddForAlcohol_7">More water, sailor!</string>
+    <string name="toastAddForAlcohol_8">Do you want to die?</string>
+    <string name="toastAddForAlcohol_9">You must have a death wish!</string>
+
+    <string name="toastSubtractForSoftDrink_1">Phew! Finally!</string>
+    <string name="toastSubtractForSoftDrink_2">About damn time!</string>
+    <string name="toastSubtractForSoftDrink_3">You\'re still not driving home!</string>
+    <string name="toastSubtractForSoftDrink_4">Good job! Some more of this?</string>
+    <string name="toastSubtractForSoftDrink_5">More of this &amp; less of that spirit!</string>
+    <string name="toastSubtractForSoftDrink_6">No hangover, no cry!</string>
+    <string name="toastSubtractForSoftDrink_7">Yes, you\'ll live tomorrow!</string>
+    <string name="toastSubtractForSoftDrink_8">With great power comes great responsibility.</string>
+    <string name="toastSubtractForSoftDrink_9">Not judging you. Honest.</string>
 </resources>

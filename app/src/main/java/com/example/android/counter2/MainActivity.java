@@ -1,19 +1,13 @@
 package com.example.android.counter2;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.android.counter2.R;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
      */
 
     int scoreSoftDrink;
+
+    // Pulls the content of Strings to toast messages.
 
     /**
      * Pulls out the value for the two total scores, alcohol consumption and needed soft drink consumption,
@@ -99,31 +95,39 @@ public class MainActivity extends AppCompatActivity {
     public void addOneForAlcohol(View v) {
         scoreAlcohol++;
         scoreSoftDrink++;
+        String toastAddForAlcohol_0 = getString(R.string.toastAddForAlcohol_0);
+        String toastAddForAlcohol_1 = getString(R.string.toastAddForAlcohol_1);
+        String toastAddForAlcohol_2 = getString(R.string.toastAddForAlcohol_2);
+        String toastAddForAlcohol_3 = getString(R.string.toastAddForAlcohol_3);
+        String toastAddForAlcohol_4 = getString(R.string.toastAddForAlcohol_4);
+        String toastAddForAlcohol_5 = getString(R.string.toastAddForAlcohol_5);
+        String toastAddForAlcohol_6 = getString(R.string.toastAddForAlcohol_6);
+        String toastAddForAlcohol_7 = getString(R.string.toastAddForAlcohol_7);
+        String toastAddForAlcohol_8 = getString(R.string.toastAddForAlcohol_8);
+        String toastAddForAlcohol_9 = getString(R.string.toastAddForAlcohol_9);
         displayForAlcohol(scoreAlcohol);
         displayForSoftDrink(scoreSoftDrink);
         if (scoreAlcohol == 1) {
-            Toast.makeText(getApplicationContext(), "Goody, start nice & easy!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_0, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol == 3) {
-            Toast.makeText(getApplicationContext(), "Oho! It must be Friday!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_1, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol == 2 || scoreAlcohol == 4) {
-            Toast.makeText(getApplicationContext(), "That's the spirit! Literally...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_2, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol == 6) {
-            Toast.makeText(getApplicationContext(), "You're still okay... kinda.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_3, Toast.LENGTH_SHORT).show();
             // keep varying messages here based on water intake as alcohol level increases.
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink <= 4 && scoreAlcohol % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "Drown your sorrow in juice instead!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_4, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink <= 4 && scoreAlcohol % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "Non-alcoholics were a better idea.!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_5, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink > 4 && scoreAlcohol % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "Turn on the water, please!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_6, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink > 4 && scoreAlcohol % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "More water, sailor!", Toast.LENGTH_SHORT).show();
-        } else if (scoreAlcohol >= 10 && scoreAlcohol < 18 && scoreAlcohol % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "Do you want to die?", Toast.LENGTH_SHORT).show();
-        } else if (scoreAlcohol >= 10 && scoreAlcohol < 18 && scoreAlcohol % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "You must have a death wish!", Toast.LENGTH_SHORT).show();
-        } else if (scoreAlcohol >= 18 && scoreAlcohol % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "GAME OVER", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_7, Toast.LENGTH_SHORT).show();
+        } else if (scoreAlcohol >= 10 && scoreAlcohol < 15 && scoreAlcohol % 2 == 0) {
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_8, Toast.LENGTH_SHORT).show();
+        } else if (scoreAlcohol >= 10 && scoreAlcohol < 15 && scoreAlcohol % 2 == 1) {
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_9, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -132,29 +136,36 @@ public class MainActivity extends AppCompatActivity {
     public void addThreeForAlcohol(View v) {
         scoreAlcohol = scoreAlcohol + 3;
         scoreSoftDrink = scoreSoftDrink + 3;
+        String toastAddForAlcohol_1 = getString(R.string.toastAddForAlcohol_1);
+        String toastAddForAlcohol_2 = getString(R.string.toastAddForAlcohol_2);
+        String toastAddForAlcohol_3 = getString(R.string.toastAddForAlcohol_3);
+        String toastAddForAlcohol_4 = getString(R.string.toastAddForAlcohol_4);
+        String toastAddForAlcohol_5 = getString(R.string.toastAddForAlcohol_5);
+        String toastAddForAlcohol_6 = getString(R.string.toastAddForAlcohol_6);
+        String toastAddForAlcohol_7 = getString(R.string.toastAddForAlcohol_7);
+        String toastAddForAlcohol_8 = getString(R.string.toastAddForAlcohol_8);
+        String toastAddForAlcohol_9 = getString(R.string.toastAddForAlcohol_9);
         displayForAlcohol(scoreAlcohol);
         displayForSoftDrink(scoreSoftDrink);
         if (scoreAlcohol == 3) {
-            Toast.makeText(getApplicationContext(), "Oho! It must be Friday!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_1, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol == 2 || scoreAlcohol == 4) {
-            Toast.makeText(getApplicationContext(), "That's the spirit! Literally...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_2, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol == 6) {
-            Toast.makeText(getApplicationContext(), "You're still okay... kinda.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_3, Toast.LENGTH_SHORT).show();
             // keeps displaying various messages based on water intake as alcohol level increases.
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink <= 4 && scoreAlcohol % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "Drown your sorrow in juice instead!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_4, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink <= 4 && scoreAlcohol % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "Non-alcoholics were a better idea.!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_5, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink > 4 && scoreAlcohol % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "Turn on the water, please!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_6, Toast.LENGTH_SHORT).show();
         } else if (scoreAlcohol > 6 && scoreAlcohol < 10 && scoreSoftDrink > 4 && scoreAlcohol % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "More water, sailor!", Toast.LENGTH_SHORT).show();
-        } else if (scoreAlcohol >= 10 && scoreAlcohol < 18 && scoreAlcohol % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "Do you want to die?", Toast.LENGTH_SHORT).show();
-        } else if (scoreAlcohol >= 10 && scoreAlcohol < 18 && scoreAlcohol % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "You must have a death wish!", Toast.LENGTH_SHORT).show();
-        } else if (scoreAlcohol >= 18 && scoreAlcohol % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "GAME OVER", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_7, Toast.LENGTH_SHORT).show();
+        } else if (scoreAlcohol >= 10 && scoreAlcohol < 15 && scoreAlcohol % 2 == 0) {
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_8, Toast.LENGTH_SHORT).show();
+        } else if (scoreAlcohol >= 10 && scoreAlcohol < 15 && scoreAlcohol % 2 == 1) {
+            Toast.makeText(getApplicationContext(), toastAddForAlcohol_9, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -186,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
      * Method that displays the total score for the alcohol consumed (in made-up units).
      * Signifies the amount of alcohol user already consumed.
      * User should keep it low.
+     *
      * @param alcScore User's current alcohol score (alcohol consumed).
      */
     public void displayForAlcohol(int alcScore) {
@@ -214,25 +226,34 @@ public class MainActivity extends AppCompatActivity {
 
     public void subtractOneForSoftDrink(View v) {
         scoreSoftDrink--;
+        String toastSubtractForSoftDrink_1 = getString(R.string.toastSubtractForSoftDrink_1);
+        String toastSubtractForSoftDrink_2 = getString(R.string.toastSubtractForSoftDrink_2);
+        String toastSubtractForSoftDrink_3 = getString(R.string.toastSubtractForSoftDrink_3);
+        String toastSubtractForSoftDrink_4 = getString(R.string.toastSubtractForSoftDrink_4);
+        String toastSubtractForSoftDrink_5 = getString(R.string.toastSubtractForSoftDrink_5);
+        String toastSubtractForSoftDrink_6 = getString(R.string.toastSubtractForSoftDrink_6);
+        String toastSubtractForSoftDrink_7 = getString(R.string.toastSubtractForSoftDrink_7);
+        String toastSubtractForSoftDrink_8 = getString(R.string.toastSubtractForSoftDrink_8);
+        String toastSubtractForSoftDrink_9 = getString(R.string.toastSubtractForSoftDrink_9);
         displayForSoftDrink(scoreSoftDrink);
         if (scoreSoftDrink > 11) {
-            Toast.makeText(getApplicationContext(), "Phew! Finally!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_1, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 11 && scoreSoftDrink > 8 && scoreSoftDrink % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "About damn time!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_2, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 11 && scoreSoftDrink > 8 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "You're still not driving home!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_3, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol >= 7 && scoreSoftDrink % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "Good job! Some more of this?", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_4, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol >= 7 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "More of this & less of that spirit!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_5, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol < 7 && scoreAlcohol > 3 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "No hangover, no cry!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_6, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol < 7 && scoreAlcohol > 3 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "Yes, you'll live tomorrow!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_7, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol <= 3 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "With great power comes great responsibility.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_8, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol <= 3 && scoreSoftDrink % 2 == 1 || scoreSoftDrink % 2 == -1) {
-            Toast.makeText(getApplicationContext(), "Not judging you. Honest.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_9, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -240,25 +261,34 @@ public class MainActivity extends AppCompatActivity {
 
     public void subtractTwoForSoftDrink(View v) {
         scoreSoftDrink = scoreSoftDrink - 2;
+        String toastSubtractForSoftDrink_1 = getString(R.string.toastSubtractForSoftDrink_1);
+        String toastSubtractForSoftDrink_2 = getString(R.string.toastSubtractForSoftDrink_2);
+        String toastSubtractForSoftDrink_3 = getString(R.string.toastSubtractForSoftDrink_3);
+        String toastSubtractForSoftDrink_4 = getString(R.string.toastSubtractForSoftDrink_4);
+        String toastSubtractForSoftDrink_5 = getString(R.string.toastSubtractForSoftDrink_5);
+        String toastSubtractForSoftDrink_6 = getString(R.string.toastSubtractForSoftDrink_6);
+        String toastSubtractForSoftDrink_7 = getString(R.string.toastSubtractForSoftDrink_7);
+        String toastSubtractForSoftDrink_8 = getString(R.string.toastSubtractForSoftDrink_8);
+        String toastSubtractForSoftDrink_9 = getString(R.string.toastSubtractForSoftDrink_9);
         displayForSoftDrink(scoreSoftDrink);
         if (scoreSoftDrink > 11) {
-            Toast.makeText(getApplicationContext(), "Phew! Finally!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_1, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 11 && scoreSoftDrink > 8 && scoreSoftDrink % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "About damn time!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_2, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 11 && scoreSoftDrink > 8 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "You're still not driving home!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_3, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol >= 7 && scoreSoftDrink % 2 == 1) {
-            Toast.makeText(getApplicationContext(), "Good job! Some more of this?", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_4, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol >= 7 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "More of this & less of that spirit!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_5, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol < 7 && scoreAlcohol > 3 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "No hangover, no cry!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_6, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol < 7 && scoreAlcohol > 3 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "Yes, you'll live tomorrow!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_7, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol <= 3 && scoreSoftDrink % 2 == 0) {
-            Toast.makeText(getApplicationContext(), "With great power comes great responsibility.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_8, Toast.LENGTH_SHORT).show();
         } else if (scoreSoftDrink < 8 && scoreAlcohol <= 3 && scoreSoftDrink % 2 == 1 || scoreSoftDrink % 2 == -1) {
-            Toast.makeText(getApplicationContext(), "Not judging you. Honest.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), toastSubtractForSoftDrink_9, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -266,6 +296,7 @@ public class MainActivity extends AppCompatActivity {
      * Method that displays the total score for soft drinks (in made-up units).
      * Signifies the amount of soft drinks user still needs to drink.
      * User should keep it low.
+     *
      * @param waterScore User's current water/softDrink score (units consumed).
      */
 

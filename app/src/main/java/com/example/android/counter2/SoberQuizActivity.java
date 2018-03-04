@@ -1,21 +1,14 @@
 package com.example.android.counter2;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -250,6 +243,7 @@ public class SoberQuizActivity extends AppCompatActivity {
     /**
      * A method that gets called inside the startQuiz method.
      * It changes the displayed math quiz question upon the user's submission of their answer to the next one.
+     *
      * @param statement The to-be-displayed upcoming math quiz question.
      */
 
@@ -261,6 +255,7 @@ public class SoberQuizActivity extends AppCompatActivity {
     /**
      * A method that gets called inside the startQuiz method.
      * It changes the displayed math quiz answer (an edit text view) to the user's typed in solution.
+     *
      * @param answer The user's typed in solution.
      */
 
@@ -272,6 +267,7 @@ public class SoberQuizActivity extends AppCompatActivity {
     /**
      * A method that gets called inside the startQuiz method.
      * It changes the displayed text on the button (start quiz, submit answer, or go home friend, you're drunk) depending on the context.
+     *
      * @param buttonText The to-be-displayed wording of the button.
      */
 
@@ -282,12 +278,13 @@ public class SoberQuizActivity extends AppCompatActivity {
 
     /**
      * Method that sends user back to Main Activity based if their soberness quiz score was high enough (at least 3 out of 5).
+     *
      * @param soberScore User's score (number of correct answers) on the math quiz (soberness quiz).
-     * getIntent and putExtra lines: Getting from and sending back to Main Activity the alcohol score and water score the user arrived with to the soberness quiz.
-     * TODO Find a way to make the Main Activity only try to access these scores if a SoberActivity has already been launched and it has sent user back to Main Activity.
-     * Now it crashes because Main Activity tries to access these intents even if it is launched for the very first time.
-     * So getIntent has been removed from Main Activity for now to prevent this crash.
-     * TODO learn more about multi screen apps to fix this.
+     *                   getIntent and putExtra lines: Getting from and sending back to Main Activity the alcohol score and water score the user arrived with to the soberness quiz.
+     *                   TODO Find a way to make the Main Activity only try to access these scores if a SoberActivity has already been launched and it has sent user back to Main Activity.
+     *                   Now it crashes because Main Activity tries to access these intents even if it is launched for the very first time.
+     *                   So getIntent has been removed from Main Activity for now to prevent this crash.
+     *                   TODO learn more about multi screen apps to fix this.
      */
 
     public void startMainActivity(int soberScore) {
