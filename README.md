@@ -6,7 +6,7 @@ Background: submitted for Android Basics Nanodegree by Google at Udacity, Feb. 2
 Changes since AVeryResponsibleApp4.0:
 
 (1) Removed hardcoded toasts from Java and referenced it from strings.xml. 
-(2) GameOver toast was useless as specified, as score could not go over 18, SoberQuiz kicks in at13. So got rid of GameOver toast. 
+(2) GameOver toast was useless as specified, as score could not go over 18, SoberQuiz kicks in at 13. So got rid of GameOver toast. 
 (3) readme changes (typos). 
 (4) Got rid of unused import statements. (5) Set targetSdkVersion to latest (27).
 
