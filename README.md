@@ -59,7 +59,7 @@ Layout:
 - moved a lot of the layout.xml into styles and referenced them from there.
 
 Java:
-- a new activity was added (wrapped in ScrollView so that no separate layout-land is needed), making the app multiscreen: after the alcohol units reach 15, a quiz page pops up and begins to test user on their basic math;
+- a new activity was added (wrapped in ScrollView so that no separate layout-land is needed), making the app multiscreen: after the alcohol units reach 13, a quiz page pops up and begins to test user on their basic math;
 - after 5 calculations, app calculates soberness (correctness) score, and if it reaches 3 or more out of 5, it displays a positive toast, if not, it displays a toast saying ”Go home friend, you’re drunk!”
 
 TODO: the java is not perfect yet.
