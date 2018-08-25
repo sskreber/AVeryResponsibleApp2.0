@@ -13,6 +13,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+<!-- GoHOmeIMage (original file name: "sommeil-naturel.jph") was 
+accessed at http://bouddhisme-universite.org/remedes-naturels-sommeil/ -->
         <ImageView
             android:id="@+id/GoHomeImage"
             android:layout_width="match_parent"
